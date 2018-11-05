@@ -1,0 +1,7 @@
+{
+  "name": "FixMyHome",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
