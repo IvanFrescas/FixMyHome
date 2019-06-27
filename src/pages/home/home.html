@@ -1,17 +1,55 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title text-center>Fix My Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  
+  <!--
+  <ion-item>
+    <ion-label><ion-icon name="search"></ion-icon></ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  -->
+  <p>Bienvenido a FixMyHome, aquí puedes solicitar servicios para que otra persona te ayude en tu hogar da click al servicio que necesitas </p>
+
+  <ion-card (click)='detalles("carpintería")'>     
+    <ion-card-content>
+      <img src=" assets/imgs/carpintería.jpg"/>
+      <ion-card-title>Carpintería</ion-card-title> 
+      <p>
+        Servicios especializados en el mantenimiento, reforma y obra nueva de carpintería de madera.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)='detalles("cerrajero")'>     
+    <ion-card-content>
+      <img src=" assets/imgs/cerrajero.jpg"/>
+      <ion-card-title>Cerrajería</ion-card-title> 
+      <p>
+        Servicio de cerrajería y asesoramiento profesional 
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)='detalles("pintor")'>     
+    <ion-card-content>
+      <img src=" assets/imgs/pintor.jpg"/>
+      <ion-card-title>Pintura</ion-card-title> 
+      <p>
+        Los mejores profesionales y empresas de pintores recibirán un aviso de tu proyecto.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)='detalles("plomero")'>
+    <ion-card-content>
+      <img src=" assets/imgs/plomero.jpg"/>
+      <ion-card-title>Plomeros</ion-card-title> 
+      <p>
+        Servicios de plomería generales
+      </p>
+    </ion-card-content>
+  </ion-card>    
+  <p>Se estarán añadiendo más servicios en futuras actualizaciones</p>
+  
 </ion-content>

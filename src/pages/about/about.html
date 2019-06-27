@@ -1,11 +1,37 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Trabajos 
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+<!--
+  <ion-list>
+    <button ion-item *ngFor="let job of jobs" (click)="goToDetail(job.id)">
+     {{ job.title }}
+     
+    </button>  
+  </ion-list>
+-->
+
+<ion-card *ngFor="let job of jobs" (click)="goToDetail(job.id)">
+  <ion-item>
+    <ion-thumbnail item-start>
+      
+      <img src="assets/imgs/{{job.type}}.jpg" alt="">
+    </ion-thumbnail>
+    <h2>{{job.title}}</h2>
+    <p>{{job.date}}</p>
+  </ion-item>
+
+  <ion-card-content>
+    <p>{{job.description}}</p>
+  </ion-card-content>
+
+</ion-card>
+
 
 </ion-content>
